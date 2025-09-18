@@ -11,11 +11,8 @@
 <div class="d-flex">
     <div class="sidebar p-3">
         <h4 class="text-primary mb-4">📚 Perpustakaan</h4>
-        <a href="#">Discover</a>
         <a href="#">Category</a>
         <a href="#">My Library</a>
-        <a href="#">Download</a>
-        <a href="#">Audio Books</a>
         <a href="#">Favourite</a>
         <hr>
         <a href="#">Settings</a>
