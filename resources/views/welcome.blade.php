@@ -5,49 +5,49 @@
     <input type="text" class="form-control w-50" placeholder="Search your favourite books...">
     <div class="d-flex align-items-center gap-2">
         <span class="fw-semibold">PROFILE</span>
-        <img src="https://via.placeholder.com/40" class="rounded-circle" alt="profile">
+        <img src="{{ asset('image/profile.jpg') }}" class="rounded-circle" alt="profile" style="width:40px; height:40px;">
     </div>
 </div>
 
-<div class="mb-5">
+<div class="mb-3">
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h5>Recommended</h5>
         <a href="#" class="text-primary">See All</a>
     </div>
     <div class="row g-3">
-        <div class="col-md-3">
+        <div class="col-md-2">
             <div class="card book-card shadow-sm">
-                <img src="https://via.placeholder.com/150x200" class="card-img-top" alt="book">
+                <img src="{{ asset('image/money.png') }}" class="card-img-top" alt="book">
                 <div class="card-body">
                     <h6 class="card-title">The Psychology of Money</h6>
                     <small class="text-muted">Morgan Housel</small>
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
             <div class="card book-card shadow-sm">
-                <img src="https://via.placeholder.com/150x200" class="card-img-top" alt="book">
+                <img src="{{ asset('image/Innovation.png') }}" class="card-img-top" alt="book">
                 <div class="card-body">
                     <h6 class="card-title">How Innovation Works</h6>
                     <small class="text-muted">Matt Ridley</small>
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
             <div class="card book-card shadow-sm">
-                <img src="https://via.placeholder.com/150x200" class="card-img-top" alt="book">
+                <img src="{{ asset('image/Company.png') }}" class="card-img-top" alt="book">
                 <div class="card-body">
-                    <h6 class="card-title">How Innovation Works</h6>
-                    <small class="text-muted">Matt Ridley</small>
+                    <h6 class="card-title">Company of One</h6>
+                    <small class="text-muted">Paul Jarvis</small>
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
             <div class="card book-card shadow-sm">
-                <img src="https://via.placeholder.com/150x200" class="card-img-top" alt="book">
+                <img src="{{ asset('image/stupore.png') }}" class="card-img-top" alt="book">
                 <div class="card-body">
-                    <h6 class="card-title">How Innovation Works</h6>
-                    <small class="text-muted">Matt Ridley</small>
+                    <h6 class="card-title">Stupore E Tremori</h6>
+                    <small class="text-muted">Amelie Nothomb</small>
                 </div>
             </div>
         </div>
@@ -68,7 +68,7 @@
     <div class="row g-3">
         <div class="col-md-2">
             <div class="card book-card shadow-sm">
-                <img src="https://via.placeholder.com/150x200" class="card-img-top" alt="book">
+                <img src="{{ asset('image/bees.png') }}" class="card-img-top" alt="book">
                 <div class="card-body">
                     <h6 class="card-title">The Bees</h6>
                     <small class="text-muted">Laline Paul</small>
@@ -77,7 +77,7 @@
         </div>
         <div class="col-md-2">
             <div class="card book-card shadow-sm">
-                <img src="https://via.placeholder.com/150x200" class="card-img-top" alt="book">
+                <img src="{{ asset('image/help.png') }}" class="card-img-top" alt="book">
                 <div class="card-body">
                     <h6 class="card-title">Real Help</h6>
                     <small class="text-muted">Ayodeji Awosika</small>
@@ -86,37 +86,28 @@
         </div>
         <div class="col-md-2">
             <div class="card book-card shadow-sm">
-                <img src="https://via.placeholder.com/150x200" class="card-img-top" alt="book">
+                <img src="{{ asset('image/fact.png') }}" class="card-img-top" alt="book">
                 <div class="card-body">
-                    <h6 class="card-title">Real Help</h6>
-                    <small class="text-muted">Ayodeji Awosika</small>
+                    <h6 class="card-title">The Fact of a Body</h6>
+                    <small class="text-muted"></small>
                 </div>
             </div>
         </div>
         <div class="col-md-2">
             <div class="card book-card shadow-sm">
-                <img src="https://via.placeholder.com/150x200" class="card-img-top" alt="book">
+                <img src="{{ asset('image/room.png') }}" class="card-img-top" alt="book">
                 <div class="card-body">
-                    <h6 class="card-title">Real Help</h6>
-                    <small class="text-muted">Ayodeji Awosika</small>
+                    <h6 class="card-title">The Room</h6>
+                    <small class="text-muted">Jonas Karisson</small>
                 </div>
             </div>
         </div>
         <div class="col-md-2">
             <div class="card book-card shadow-sm">
-                <img src="https://via.placeholder.com/150x200" class="card-img-top" alt="book">
+                <img src="{{ asset('image/through.png') }}" class="card-img-top" alt="book">
                 <div class="card-body">
-                    <h6 class="card-title">Real Help</h6>
-                    <small class="text-muted">Ayodeji Awosika</small>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="card book-card shadow-sm">
-                <img src="https://via.placeholder.com/150x200" class="card-img-top" alt="book">
-                <div class="card-body">
-                    <h6 class="card-title">Real Help</h6>
-                    <small class="text-muted">Ayodeji Awosika</small>
+                    <h6 class="card-title">Through the Breaking</h6>
+                    <small class="text-muted">Cate Ermand</small>
                 </div>
             </div>
         </div>
