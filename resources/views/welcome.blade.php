@@ -1,13 +1,23 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="d-flex justify-content-between align-items-center mb-4">
-    <input type="text" class="form-control w-50" placeholder="Search your favourite books...">
-    <div class="d-flex align-items-center gap-2">
-        <span class="fw-semibold">PROFILE</span>
-        <img src="{{ asset('image/profile.jpg') }}" class="rounded-circle" alt="profile" style="width:40px; height:40px;">
+<div class="d-flex justify-content-between align-items-center mb-4 p-3 bg-white shadow-sm rounded">
+    <div class="input-group w-50">
+        <span class="input-group-text bg-white border-0">
+            <i class="bi bi-search text-muted"></i>
+        </span>
+        <input type="text" class="form-control border-0" placeholder="Search your favourite books...">
+    </div>
+    
+    <div class="d-flex align-items-center gap-3">
+        <span class="fw-semibold">Reyga</span>
+        <img src="{{ asset('image/profile.jpg') }}" 
+             class="rounded-circle" 
+             alt="profile" 
+             style="width:40px; height:40px; object-fit:cover;">
     </div>
 </div>
+
 
 <div class="mb-3">
     <div class="d-flex justify-content-between align-items-center mb-3">
