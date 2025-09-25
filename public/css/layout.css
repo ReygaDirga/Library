@@ -1,11 +1,16 @@
 body {
     background-color: #f8f9fa;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
+
+/* Sidebar */
 .sidebar {
     width: 250px;
     min-height: 100vh;
     background: #fff;
     border-right: 1px solid #dee2e6;
+    transition: all 0.3s ease;
 }
 .sidebar a {
     display: block;
@@ -17,20 +22,75 @@ body {
     background: #e9ecef;
     border-radius: 5px;
 }
+
+/* Book Card */
 .book-card {
-    width: 180px;         /* lebar fix card */
-    height: 280px;        /* tinggi fix card */
+    width: 180px;
+    height: 280px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;  /* biar gambar di tengah horizontal */
+    align-items: center;
     padding: 10px;
     text-align: center;
 }
-
 .book-card img {
-    width: 120px;         /* gambar lebih kecil */
+    width: 120px;
     height: 160px;
     object-fit: cover;
-    margin-bottom: 10px;  /* jarak ke judul */
+    margin-bottom: 10px;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 992px) {
+    /* Sidebar jadi lebih kecil */
+    .sidebar {
+        width: 200px;
+    }
+    .book-card {
+        width: 150px;
+        height: auto;
+    }
+    .book-card img {
+        width: 100px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Sidebar turun ke atas (jadi navbar) */
+    .d-flex {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+        border-right: none;
+        border-bottom: 1px solid #dee2e6;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sidebar a {
+        padding: 8px 12px;
+    }
+    .book-card {
+        width: 45%;   /* biar dua kolom di layar HP */
+        margin-bottom: 15px;
+    }
+    .book-card img {
+        width: 100px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .book-card {
+        width: 100%;   /* full 1 kolom */
+        height: auto;
+    }
+    .book-card img {
+        width: 80px;
+        height: 120px;
+    }
 }
